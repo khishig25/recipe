@@ -1,0 +1,40 @@
+create package json
+1. npm init -y
+
+install web pack
+2. 
+npm install webpack --save-dev
+esvel npm i webpack --save-dev
+3.
+npm i webpack-cli --save-dev     "webpack-cli": "^3.3.10", aldaa garaad bhaar ni ene huvilbar suulgasan
+ 4.
+create webpack configuration file
+webpack.config.js
+
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+  },
+}; webpackiin sitaas huulav
+5. html wep plagin ashiglay
+npmjs.com s haigaarai html-webpack-plagin ined=x html deer automataar neriig bichij, js filuudiig index dotroo zooj dist dotor uusgej ogno
+
+npm i --save-dev html-webpack-plugin
+template gedgiig ni ashiglii
+6.  install webpack dev server
+npm i webpack-dev-server
+7 babel saitaas ni suulga
+npm install --save @babel/polyfill ene ni bur bolomjguig ni browser deer bichij ogdog uchir codetegee yana geed ene moduliig defendency ruu suulgana gesen 
+babel loader suulga auto convert hiinenpm
+
+git remote -v
+git init
+git remote add origin https://github.com/khishig25/recipe.git
+
+
+npm install gevel packege jsonoosoo node_modulia uusgechihdeg. tiimees nod_modeliig damjuulah hadgalah shaardlagagui
+.gitignore uusgeed tendee zaaj og node_modulia teheer gitruu hiihgu
