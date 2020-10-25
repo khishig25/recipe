@@ -5,12 +5,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/js/index.js", // endees compile hiine gj zaaj ogjiin
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: "js/main.js",
+    path: path.resolve(__dirname, "docs"),
   },
   // dev serveriin tohirgooo
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./docs",
   },
   plugins: [
     //new HtmlWebpackPlugin(), // Generates default index.html

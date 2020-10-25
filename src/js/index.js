@@ -1,9 +1,6 @@
-const array = [23, 44, 12];
-let myfunc = (a) => {
-  console.log(`object :>> :${a}`);
-};
-let myFunction = (a) => {
-  console.log(`${a}`);
-};
-const arr2 = [...array, 44, 1233];
-myfunc(arr2[1]);
+require("@babel/polyfill");
+import Search from "./model/search";
+//import query from "./model/search"; //defualt exportigg
+
+let search = new Search("pizza");
+search.doSearch().then((r) => console.log(r));

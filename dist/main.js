@@ -1,1 +1,0 @@
-(()=>{var c;c=[].concat([23,44,12],[44,1233])[1],console.log("object :>> :".concat(c))})();
