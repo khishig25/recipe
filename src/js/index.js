@@ -37,10 +37,10 @@ const controlSearch = async () => {
     // 4) Хайлтын үр дүнг дэлгэцэнд үзүүлнэ
 
     //searchView.renderRecipes(state.search.result);
-    if (state.search.result !== undefined) {
-      searchView.renderRecipes(state.search.result);
-    } else {
+    if (state.search.result == undefined) {
       alert("Хайлтын илэрц алга");
+    } else {
+      searchView.renderRecipes(state.search.result);
     }
   }
 
