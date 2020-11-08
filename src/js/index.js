@@ -1,6 +1,6 @@
 require("@babel/polyfill");
 import Search from "./model/search";
-import { elements } from "./view/base";
+import { clearLoader, elements, searchloader } from "./view/base";
 import * as searchView from "./view/searchView";
 //import query from "./model/search"; //defualt exportigg
 
@@ -33,10 +33,12 @@ const controlSearch = async () => {
     // 3) хайлт гарч ирэхээс өмнө дэлгэцийг цэвэрлэж бэлдэнэ
     searchView.clearTextInput();
     searchView.clearSearchList();
+    searchloader(elements.searchResultDiv);
     await state.search.doSearch();
     // 4) Хайлтын үр дүнг дэлгэцэнд үзүүлнэ
 
     //searchView.renderRecipes(state.search.result);
+    clearLoader();
     if (state.search.result == undefined) {
       alert("Хайлтын илэрц алга");
     } else {
