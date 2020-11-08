@@ -20,6 +20,6 @@ export const searchloader = (parent) => {
 
 export const clearLoader = () => {
   const loader = document.querySelector(`.${elementStrings.loader}`);
-
+  // ene
   if (loader) loader.parentElement.removeChild(loader);
 };
